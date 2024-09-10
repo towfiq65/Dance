@@ -1,0 +1,554 @@
+
+:root {
+    --primary-color: #1c8ce8;
+}
+
+/* Common css Start */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-size: 16px;
+    /* line-height: 26px; */
+    font-weight: 400;
+    color: #fff;
+}
+/* Common css End */
+
+/* Header Start */
+.header {
+    background-color: #303030;
+    padding: 20px 0;
+}
+.header .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .header-content .list ul {
+    display: flex;
+}
+
+.header .header-content .list ul li a {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 70px;
+    transition: all linear .3s;
+}
+.header .header-content .list ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Header End */
+
+/* Banner Start */
+.banner {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 270px 0 100px 0;
+}
+
+.banner .banner-content {
+    width: 50%;
+    /* text-align: center; */
+}
+
+.banner .banner-content h1 {
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.banner .banner-content p {
+    padding-top: 20px;
+    font-size: 32px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.banner .banner-content a {
+    margin-top: 40px;
+    /* display: inline-block; */
+    width: 250px;
+    height: 70px;
+    background-color: var(--primary-color);
+    font-size: 25px;
+    /* font-weight: 800; */
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Banner End */
+
+/* About Start */
+.about {
+    padding: 100px 0;
+    background-color: var(--primary-color);
+}
+.about .about-header {
+    text-align: center;
+}
+
+.about .about-header h2 {
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.about .about-header p {
+    padding-top: 40px;
+    max-width: 890px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 100;
+}
+.about .about-content {
+    display: flex;
+    margin-top: 50px; 
+}
+
+.about .about-content .about-item {
+    width: 30%;
+    /* padding: 30px;
+    box-sizing: border-box; */
+    text-align: center;
+    border: 25px solid var(--primary-color);
+    background-color: #303030;
+    
+}
+
+.about .about-content .about-item img {
+    max-width: 370px;
+    max-height: 325px;
+    object-fit: cover;
+}
+
+.about .about-content .about-item h3 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+.about .about-content .about-item p {
+    font-size: 25px;
+    /* line-height: 26px; */
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+/* About End */
+
+/* Pricing Start */
+.pricing {
+    padding: 100px 0;
+    background-color: #303030;
+}
+.pricing .pricing-header {
+    text-align: center;
+}
+
+.pricing .pricing-header h2 {
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.pricing .pricing-header p {
+    padding-top: 40px;
+    max-width: 890px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 32px;
+}
+.pricing .pricing-content {
+    display: flex;
+    margin-top: 50px; 
+}
+
+.pricing .pricing-content .pricing-item {
+    width: 30%;
+    text-align: center;
+    border: 25px solid #303030;
+    background-color: var(--primary-color);
+}
+
+.pricing .pricing-content .pricing-item img {
+    max-width: 370px;
+    max-height: 325px;
+    object-fit: cover;
+    padding-top: 50px;
+}
+
+.pricing .pricing-content .pricing-item h3 {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+.pricing .pricing-content .pricing-item p {
+    font-size: 25px;
+    font-weight: 100;
+    padding-bottom: 30px;
+}
+.pricing .pricing-content .pricing-item a {
+    margin-top: 40px;
+    width: 300px;
+    height: 70px;
+    background-color: #303030;
+    font-size: 32px;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/* Pricing End */
+
+/* Services Start */
+.services {
+    background-color: var(--primary-color);
+    padding: 80px 0;
+    position: relative;
+}
+
+.services .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.services .overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services .services-content {
+    padding: 325px 0 280px 0;
+    width: 50%;
+    
+    box-sizing: border-box;
+    margin-left: auto;
+}
+
+.services .services-content .services-header h3 {
+    padding-left: 60px;
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.services .services-content .services-header p {
+    padding-top: 25px;
+    padding-left: 60px;
+    font-size: 60px;
+    font-weight: 200;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 570px;
+}
+
+.services .services-content .services-header a {
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 300px;
+    height: 70px;
+    background-color: #303030;
+    font-size: 32px;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Services End */
+
+/* Dance Start */
+.dance {
+    background-color: var(--primary-color);
+    padding: 80px 0;
+    position: relative;
+}
+
+.dance .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.dance .overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dance .dance-content {
+    padding: 325px 0 280px 0;
+    width: 50%;
+    
+    box-sizing: border-box;
+    margin-right: auto;
+}
+
+.dance .dance-content .dance-header h3 {
+    font-size: 80px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.dance .dance-content .dance-header p {
+    padding-top: 25px;
+    font-size: 60px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 570px;
+}
+
+.dance .dance-content .dance-header a {
+    margin-top: 40px;
+    width: 300px;
+    height: 70px;
+    background-color: #303030;
+    font-size: 32px;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Dance End */
+
+/* Statistics Start */
+.statistics {
+    padding: 210px 0 260px;
+    background-color: #303030;
+}
+
+.statistics .statistics-heading {
+    text-align: center;
+}
+
+.statistics .statistics-heading h2 {
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.statistics .statistics-heading p {
+    padding-top: 40px;
+    max-width: 890px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 32px;
+    text-align: center;
+}
+
+.statistics .statistics-content {
+    display: flex;
+    padding-top: 150px; 
+}
+
+.statistics .statistics-content .statistics-item {
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+.statistics .statistics-content .statistics-item h3 {
+    font-size: 60px;
+    font-weight: 600;
+    margin: 30px 0;
+    text-transform: capitalize;
+}
+
+.statistics .statistics-content .statistics-item p {
+    font-size: 40px;
+    font-weight: 200;
+}
+/* Statistics End */
+
+/* Herbret Start */
+.herbret {
+    background-image: url(../images/stat.png);
+    background-size: cover;
+    background-position: center;
+    padding: 340px 0 340px;
+    position: relative;
+    z-index: 1; 
+    max-height: 970px;
+}
+
+.herbret::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 140, 232, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.herbret .herbret-text {
+    text-align: center;
+}
+
+.herbret .herbret-text {
+    text-align: center;
+}
+
+.herbret .herbret-text p {
+    padding-top: 40px;
+    /* max-width: 914px; */
+    margin: 0 auto;
+    font-size: 62px;
+    font-weight: 200;
+    line-height: 72px;
+    text-align: center;
+}
+
+.herbret .herbret-text h2 {
+    padding: 85px 0;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+/* Herbret End */
+
+/* Contact Start */
+.contact {
+    background-color: var(--primary-color);
+}
+
+.contact .contact-text {
+    text-align: center;
+}
+
+.contact .contact-text h2 {
+    padding-top: 140px;
+    font-size: 70px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.contact .contact-text p {
+    padding-top: 40px;
+    max-width: 890px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 32px;
+    text-align: center;
+}
+
+.contact .contact-form {
+    padding: 40px 0 140px;
+    text-align: center;
+}
+
+.contact .contact-form form {
+    max-width: 910px;
+    margin: 0 auto;
+}
+
+.contact .contact-form form input {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 30px;
+}
+
+.contact .contact-form form input::placeholder {
+    font-size: 30px;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+.contact .contact-form form button {
+    margin-top: 30px;
+    /* display: inline-block; */
+    width: 250px;
+    height: 80px;
+    background-color: #303030;
+    font-size: 25px;
+
+    /* font-weight: 800; */
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 0 ;
+    cursor: pointer;
+}
+
+/* Contact End */
+
+/* Footer Start */
+.footer {
+    background-color: #303030;
+    
+}
+
+.footer .footer-heading {
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+}
+
+.footer .footer-heading h3 {
+    font-size: 40px;
+    font-weight: 600;
+
+    /* margin: 30px 0; */
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+
+.footer .footer-heading .footer-text {
+    width: 50%;
+}
+
+.footer .footer-heading .footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footer-heading .footer-content .footer-item {
+    margin-left: 50px;
+}
+/* Footer End */
